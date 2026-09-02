@@ -1,50 +1,317 @@
-# Welcome to your Expo app 👋
+StyleIQ 👗
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+AI-powered fashion styling and shopping application built with React Native, Expo, Firebase, Supabase, and Paystack.
 
-## Get started
+StyleIQ is a fashion-focused mobile application designed to help users discover products, manage their personal style preferences, create and save looks, shop for fashion items, and receive AI-assisted styling recommendations.
 
-1. Install dependencies
+The project also includes a web-based admin dashboard for managing users, products, orders, and other application operations.
 
-   ```bash
-   npm install
-   ```
+⸻
 
-2. Start the app
+✨ Features
 
-   ```bash
-   npx expo start
-   ```
+👤 User Accounts
 
-In the output, you'll find options to open the app in a
+* User registration and sign-in
+* Firebase Authentication
+* User profile management
+* Edit profile information
+* Profile avatar and user statistics
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+🎨 Personal Style
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+* Style preference management
+* Favorite colors
+* Clothing categories
+* Budget preferences
+* Personalized style information
 
-## Get a fresh project
+🤖 AI Stylist
 
-When you're ready, run:
+* AI-powered fashion styling experience
+* Style recommendations based on user interaction and preferences
 
-```bash
-npm run reset-project
-```
+🛍️ Shopping
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+* Browse fashion products
+* Product details
+* Product categories
+* Product colors and descriptions
+* Add products to cart
+* Wishlist functionality
 
-## Learn more
+👗 Looks & Outfits
 
-To learn more about developing your project with Expo, look at the following resources:
+* Create looks
+* Save outfits
+* Manage saved looks
+* View personal outfits
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+📦 Orders
 
-## Join the community
+* Checkout
+* Order creation
+* Order history
+* Order details
+* Delivery status
+* Payment status
 
-Join our community of developers creating universal apps.
+💳 Payments
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* Paystack payment integration
+* NGN currency support
+* Payment status tracking
+
+🔔 Notifications
+
+* In-app notification functionality
+* Notification management
+
+⚙️ Settings
+
+* Appearance/theme settings
+* Privacy & security
+* Delivery addresses
+* Payment methods
+* Help & support
+* Terms and conditions
+
+⸻
+
+🖥️ Admin Dashboard
+
+StyleIQ includes a dedicated web-based admin dashboard used as the management interface for the application.
+
+The dashboard provides functionality for:
+
+* User management
+* Product management
+* Product image management
+* Order management
+* Delivery status updates
+* Payment status updates
+* AI Stylist administration
+
+⸻
+
+🏗️ Architecture
+
+StyleIQ uses separate services for authentication, application data, product images, payments, and administration.
+
+                         ┌──────────────────────┐
+                         │      StyleIQ App     │
+                         │   React Native/Expo  │
+                         └──────────┬───────────┘
+                                    │
+                    ┌───────────────┼───────────────┐
+                    │               │               │
+                    ▼               ▼               ▼
+             Firebase Auth      Firestore       Paystack
+             Authentication     Database        Payments
+                    │               │
+                    │               │
+                    │               ▼
+                    │        Product Metadata
+                    │        User Data
+                    │        Orders
+                    │        Wishlists
+                    │
+                    ▼
+                  Users
+              ┌─────────────────────────┐
+              │     Admin Dashboard     │
+              │      React + Vite       │
+              └────────────┬────────────┘
+                           │
+                  ┌────────┴────────┐
+                  │                 │
+                  ▼                 ▼
+             Supabase           Firestore
+              Storage            Database
+                  │                 │
+                  ▼                 ▼
+           Product Images     Product Metadata
+
+Data Responsibilities
+
+Service	Purpose
+React Native + Expo	Mobile application
+React + Vite	Admin dashboard
+Firebase Authentication	User authentication
+Firebase Firestore	Application and product data
+Supabase Storage	Product image storage
+Paystack	Payment processing
+Node.js + Express	Backend/API functionality
+
+⸻
+
+🛠️ Tech Stack
+
+Mobile Application
+
+* React Native
+* Expo
+* TypeScript
+* Expo Router
+* React Navigation
+
+Backend
+
+* Node.js
+* Express
+* Firebase Admin SDK
+
+Database & Authentication
+
+* Firebase Authentication
+* Firebase Firestore
+
+Storage
+
+* Supabase Storage
+
+Payments
+
+* Paystack
+* react-native-paystack-webview
+
+Admin Dashboard
+
+* React
+* TypeScript
+* Vite
+
+Development
+
+* Git
+* GitHub
+* ESLint
+
+⸻
+
+📁 Project Structure
+
+StyleIQ/
+│
+├── app/                    # Expo Router application screens
+│
+├── assets/                 # Application assets
+│
+├── components/             # Reusable React Native components
+│
+├── constants/              # Application constants
+│
+├── hooks/                  # Custom React hooks
+│
+├── src/
+│   ├── data/               # Product data
+│   ├── services/           # Firebase and application services
+│   └── theme/              # Global theme system
+│
+├── admin/                  # StyleIQ web admin dashboard
+│
+├── backend/                # Node.js/Express backend
+│
+├── firebase-admin/         # Firebase Admin configuration
+│
+├── scripts/                # Development scripts
+│
+├── app.json                # Expo configuration
+├── package.json            # Mobile application dependencies
+└── README.md
+
+⸻
+
+🚀 Getting Started
+
+Prerequisites
+
+Make sure you have installed:
+
+* Node.js
+* npm
+* Expo CLI / Expo tooling
+* Git
+
+Clone the repository
+
+git clone https://github.com/ogumsamuel/StyleIQ.git
+cd StyleIQ
+
+Install dependencies
+
+npm install
+
+Start the Expo application
+
+npx expo start
+
+You can then run the application using Expo Go, an Android emulator, an iOS simulator, or a development build.
+
+⸻
+
+🖥️ Running the Admin Dashboard
+
+Navigate to the admin directory:
+
+cd admin
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm run dev
+
+⸻
+
+🔐 Environment Variables
+
+Sensitive credentials and environment-specific configuration are intentionally excluded from this repository.
+
+Examples include:
+
+.env
+firebase-service-account.json
+
+The admin dashboard uses environment variables for services such as Supabase.
+
+Never commit private API keys, service-account credentials, passwords, or other secrets to GitHub.
+
+⸻
+
+🎯 Project Goals
+
+StyleIQ was created to explore the intersection of:
+
+* Fashion
+* Artificial intelligence
+* Mobile application development
+* E-commerce
+* Personalized user experiences
+* Cloud-based application architecture
+
+The project demonstrates the development of a full-stack application spanning mobile development, backend services, cloud databases, authentication, storage, payments, and administration.
+
+⸻
+
+👨‍💻 Developer
+
+Ogum Samuel
+
+GitHub: @ogumsamuel
+
+⸻
+
+📌 Project Status
+
+StyleIQ is an actively developed project.
+
+New functionality, improvements, bug fixes, and refinements are being added as development continues.
+
+⸻
+
+📄 License
+
+This project is currently for portfolio and demonstration purposes.
