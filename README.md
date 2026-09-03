@@ -90,6 +90,8 @@ STYLEIQ SCREENSHOT IMAGES.
 
 ![Orders](https://github.com/ogumsamuel/StyleIQ/blob/56bdcf4af51eea91bc809312b7640ed23e5bc7d0/Orders.jpeg)
 
+![Paymen Method](https://github.com/ogumsamuel/StyleIQ/blob/5532ab25bcf83d9dc77690be0f847332f6507846/Payment%20method.jpeg)
+
 
 
 🖥️ Admin Dashboard
