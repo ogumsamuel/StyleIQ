@@ -88,6 +88,8 @@ STYLEIQ SCREENSHOT IMAGES.
 
 ![Admin Dashboard](https://github.com/ogumsamuel/StyleIQ/blob/c6d3a508be5b6d04e0db18c0532b4ff1d44d10df/Admin%20Dashboard.jpeg)
 
+![Orders](https://github.com/ogumsamuel/StyleIQ/blob/56bdcf4af51eea91bc809312b7640ed23e5bc7d0/Orders.jpeg)
+
 
 
 🖥️ Admin Dashboard
