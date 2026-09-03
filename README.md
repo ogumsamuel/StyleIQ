@@ -77,7 +77,8 @@ The project also includes a web-based admin dashboard for managing users, produc
 * Terms and conditions
 
 ⸻
-
+STYLEIQ SCREENSHOT IMAGES.
+![Home Screen](https://github.com/ogumsamuel/StyleIQ/blob/9303ccdbaf84f4e132bf9baa08223fa0560a1c7b/Home.jpeg)
 🖥️ Admin Dashboard
 
 StyleIQ includes a dedicated web-based admin dashboard used as the management interface for the application.
