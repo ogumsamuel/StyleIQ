@@ -84,6 +84,8 @@ STYLEIQ SCREENSHOT IMAGES.
 
 ![Product Details](https://github.com/ogumsamuel/StyleIQ/blob/0243d3f6d389f2a4312478cb742af2b93c0d5372/Product%20Details.jpeg)
 
+![StyleIQ Cart](https://github.com/ogumsamuel/StyleIQ/blob/93f1d456d245611cadff652ed779a8c9f4a0d361/Cart.jpeg)
+
 
 
 🖥️ Admin Dashboard
