@@ -96,6 +96,8 @@ STYLEIQ SCREENSHOT IMAGES.
 
 ![StyleIQ Ai](https://github.com/ogumsamuel/StyleIQ/blob/8a1604fd67099ffc3a7d03d1990f49c7a267dd79/StyleIQ%20Ai.jpeg)
 
+![Profile](https://github.com/ogumsamuel/StyleIQ/blob/206475cc1288ee07d02e47a4aa8d01fb7d1faf6c/Profile.jpeg)
+
 
 
 🖥️ Admin Dashboard
